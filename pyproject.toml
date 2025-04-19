@@ -11,6 +11,9 @@ license = "MIT"
 [tool.poetry]
 packages = [{ include = "blog_post_extractor", from = "src" }]
 
+[tool.poetry.group.dev.dependencies]
+watchdog = "^6.0.0"
+
 [project.scripts]
 blog_post_extractor = "blog_post_extractor.cli:main"
 
