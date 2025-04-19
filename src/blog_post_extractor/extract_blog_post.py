@@ -46,7 +46,7 @@ def extract_blog_post_title_tag(
             return tag
 
 
-def extract_blog_post(html_body: str) -> tuple(str, list[str]):
+def extract_blog_post(html_body: str) -> tuple[str, list[str]]:
     """
     Attempts to extract the article text from a certain html page.
 
