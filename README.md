@@ -2,6 +2,11 @@
 
 Attempts to read an online article and export it to a "read mode"
 
+## Warning
+
+You should probably be using the NotebookLM app
+instead.
+
 ## License
 
 The MIT License (MIT)
