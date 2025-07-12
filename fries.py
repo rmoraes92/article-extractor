@@ -1,3 +1,4 @@
+# TODO why is this named fries?
 import time
 import subprocess
 from watchdog.observers import Observer
@@ -16,9 +17,8 @@ class TestRunnerHandler(FileSystemEventHandler):
 
     def run_tests(self):
         try:
-            # Execute your test command
             subprocess.run(self.test_command, check=True, shell=True)
-            print("Tests passed!")
+            # print("Tests passed!")
         except subprocess.CalledProcessError as e:
             print(f"Tests failed!:\n{e}")
         except Exception as e:
@@ -44,3 +44,4 @@ if __name__ == "__main__":
         observer.stop()
 
     observer.join()
+
